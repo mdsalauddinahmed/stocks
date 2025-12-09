@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import NavItems from './NavItems'
+import UserDropdown from './UserDropdown'
  
 export const Header = () => {
   return (
@@ -8,11 +10,12 @@ export const Header = () => {
                 <Link href="/">
                     <Image src="/assets/icons/logo.svg" alt="Signalist logo" width={140} height={32} className="h-8 w-auto cursor-pointer" />
                 </Link>
-                {/* <nav className="hidden sm:block">
-                    <NavItems initialStocks={initialStocks} />
+                <nav className="hidden sm:block">
+                    <NavItems  />
                 </nav>
 
-                <UserDropdown user={user} initialStocks={initialStocks} /> */}
+                <UserDropdown />
+
             </div>
         </header>
   )

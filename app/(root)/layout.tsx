@@ -3,14 +3,14 @@ import { Header } from "@/components/Header"
  function layout({ children: clidren }: { children: React.ReactNode }) {
   return (
 
-    <div>
+    <main className="min-h-screen text-gray-400">
         <Header />
-         <div>
+         <div className="container py-10">
              {clidren}
          </div>
         
         
-    </div>
+    </main>
   )
 }
 
